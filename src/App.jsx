@@ -1,24 +1,12 @@
-import React, { useState } from "react";
-import Home from "./components/Home";
-import About from "./components/About";
-import Navbar from "./components/Navbar";
-import Objectives from "./components/Objectives";
-import Footer from "./components/Footer";
-import Faq from "./components/Faq";
+import React from 'react'
+import LandPage from './pages/LandPage'
 
-function App() {
-  
+const App = () => {
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
-      <Objectives />
-      <Faq />
-      <Footer />
+      <LandPage />
     </div>
-  );
+  )
 }
 
-export default App;
-
+export default App
