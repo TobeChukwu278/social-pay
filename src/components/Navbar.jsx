@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useEffect, useState, useRef } from "react";
-=======
-import React, { useEffect, useState, useRef } from "react";
->>>>>>> 52d83c7074dc85882c9405542ac125c907365ade
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { DiRust } from "react-icons/di";
