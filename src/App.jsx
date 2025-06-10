@@ -26,7 +26,8 @@
 
 
 
-import React, { useState } from 'react'
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -39,36 +40,24 @@ import Rentals from './components/Categories/Rentals'
 import Shoes from './components/Categories/Shoes'
 import Vehicles from './components/Categories/Vehicles'
 
-const App = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null)
 
-  const renderCategory = () => {
-    switch (selectedCategory) {
-      case 'clothes':
-        return <Clothes />
-      case 'accessories':
-        return <Accessories />
-      case 'apartments':
-        return <Apartments />
-      case 'electronics':
-        return <Electronics />
-      case 'house':
-        return <House />
-      case 'rentals':
-        return <Rentals />
-      case 'shoes':
-        return <Shoes />
-      case 'vehicles':
-        return <Vehicles />
-      default:
-        return <Home />
-    }
-  }
+const App = () => {
 
   return (
     <div className='bg-gray-100'>
-      <Nav onSelect={setSelectedCategory} />
-      {renderCategory()}
+      <Nav />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/clothes' element={<Clothes />} />
+        <Route path='/accessories' element={<Accessories />} />
+        <Route path='/apartments' element={<Apartments />} />
+        <Route path='/electronics' element={<Electronics />} />
+        <Route path='/house' element={<House />} />
+        <Route path='/rentals' element={<Rentals />} />
+        <Route path='/shoes' element={<Shoes />} />
+        <Route path='/vehicles' element={<Vehicles />} />
+      </Routes>
+
       <Footer />
     </div>
   )
