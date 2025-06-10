@@ -2,6 +2,7 @@ import React from 'react'
 import BoostedListing from '../components/BoostedListing'
 import FeaturedListings from '../components/FeaturedListings'
 import Categories from '../components/Categories'
+import HeroImage from '../assets/undraw_sharing-articles_agyr.svg'
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
                 </div>
 
                 {/* illustration */}
-                <img src='https://undraw.co/illustration/sharing-articles_agyr' alt='Sharing items illustration' className='hidden md:block w-1/2 max-w-md' />
+                <img src={HeroImage} alt='Sharing items illustration' className='hidden md:block w-1/2 max-w-md' />
 
             </div>
 
