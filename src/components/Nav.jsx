@@ -28,14 +28,9 @@ const Nav = () => {
                     {/* user profile */}
                     <div className='flex justify-between'>
 
-                        <a href="">
-                            <FaUser size={24} className='cursor-pointer fill-gray-700' />
-                        </a>
-                        <a href="">
-                            <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
-                        </a>
+                       
 
-              <Link to=''>
+              <Link to='/accountlinks'>
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </Link>
                         <Link to=''>
