@@ -26,8 +26,13 @@ const Nav = ({ onSelect }) => {
 
                     {/* user profile */}
                     <div className='flex justify-between'>
-                        <FaUser size={24} className='cursor-pointer fill-gray-700' />
-                        <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
+                        <a href="">
+                            <FaUser size={24} className='cursor-pointer fill-gray-700' />
+                        </a>
+                        <a href="">
+                            <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
+                        </a>
+
                     </div>
                 </div>
 
