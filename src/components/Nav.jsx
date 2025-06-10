@@ -1,19 +1,20 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import { FaUser, FaShoppingCart } from 'react-icons/fa'
 
-const Nav = ({ onSelect }) => {
+const Nav = () => {
 
-    const menu = ['clothes', 'electronics', 'apartments', 'house', 'accessories', 'shoes', 'rentals', 'vehicles']
+
 
     return (
         <div className='p-3'>
             <div className='flex flex-col'>
                 <div className='flex justify-between'>
                     {/* Logo */}
-                    <div>
-                        <button className='cursor-pointer' onClick={() => onSelect(null)}>
+                    <div> 
+                        <NavLink to='/' className='cursor-pointer' >
                             <h1 className='text-2xl sm:text-3xl font-bold text-gray-900'>SocialPay</h1>
-                        </button>
+                        </NavLink>
                     </div>
 
                     {/* Search input */}
@@ -26,6 +27,7 @@ const Nav = ({ onSelect }) => {
 
                     {/* user profile */}
                     <div className='flex justify-between'>
+
                         <a href="">
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </a>
@@ -33,18 +35,27 @@ const Nav = ({ onSelect }) => {
                             <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
                         </a>
 
+              <Link to=''>
+                            <FaUser size={24} className='cursor-pointer fill-gray-700' />
+                        </Link>
+                        <Link to=''>
+                            <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
+                        </Link>
+
                     </div>
                 </div>
 
                 {/* categories */}
                 <div className='flex gap-5 font-bold mt-5 overflow-x-auto text-[#6c757d]'>
-                    <nav className='text-gray-600 font-bold flex gap-2 overflow-x-auto'>
-                        {menu.map((item) => (
-                            <button key={item} onClick={() => onSelect(item)}>
-                                <span className='border border-gray-300 rounded-md p-1  shadow-md bg-white text-nowrap cursor-pointer'>{item.charAt(0).toUpperCase() + item.slice(1)}</span>
-                            </button>
-                        ))}
-                    </nav>
+                    <NavLink to='/clothes' className='hover:text-gray-900'>Clothes</NavLink>
+                    <NavLink to='/electronics' className='hover:text-gray-900'>Electronics</NavLink>
+                    <NavLink to='/apartments' className='hover:text-gray-900'>Apartments</NavLink>
+                    <NavLink to='/house' className='hover:text-gray-900'>House</NavLink>
+                    <NavLink to='/accessories' className='hover:text-gray-900'>Accessories</NavLink>
+                    <NavLink to='/shoes' className='hover:text-gray-900'>Shoes</NavLink>
+                    <NavLink to='/rentals' className='hover:text-gray-900'>Rentals</NavLink>
+                    <NavLink to='/vehicles' className='hover:text-gray-900'>Vehicles</NavLink>
+
                 </div>
             </div>
         </div>
