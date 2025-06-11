@@ -29,6 +29,8 @@ const Nav = () => {
                     <div className='flex justify-between'>
 
 
+
+
                         <Link to='/accountlinks'>
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </Link>

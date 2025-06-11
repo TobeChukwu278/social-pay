@@ -41,6 +41,7 @@ import Shoes from './components/Categories/Shoes'
 import Vehicles from './components/Categories/Vehicles'
 import AccountLinks from './components/Account/AccountLinks'
 
+
 const App = () => {
 
   return (
@@ -56,6 +57,7 @@ const App = () => {
         <Route path='/rentals' element={<Rentals />} />
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/vehicles' element={<Vehicles />} />
+        <Route path='/accountlinks' element={<AccountLinks />} />
         <Route path='/accountlinks' element={<AccountLinks />} />
       </Routes>
 
