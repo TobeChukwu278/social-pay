@@ -39,7 +39,7 @@ import House from './components/Categories/House'
 import Rentals from './components/Categories/Rentals'
 import Shoes from './components/Categories/Shoes'
 import Vehicles from './components/Categories/Vehicles'
-
+import AccountLinks from './components/Account/AccountLinks'
 
 const App = () => {
 
@@ -56,6 +56,7 @@ const App = () => {
         <Route path='/rentals' element={<Rentals />} />
         <Route path='/shoes' element={<Shoes />} />
         <Route path='/vehicles' element={<Vehicles />} />
+        <Route path='/accountlinks' element={<AccountLinks />} />
       </Routes>
 
       <Footer />

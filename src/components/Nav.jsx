@@ -11,7 +11,7 @@ const Nav = () => {
             <div className='flex flex-col'>
                 <div className='flex justify-between'>
                     {/* Logo */}
-                    <div> 
+                    <div>
                         <NavLink to='/' className='cursor-pointer' >
                             <h1 className='text-2xl sm:text-3xl font-bold text-gray-900'>SocialPay</h1>
                         </NavLink>
@@ -28,14 +28,8 @@ const Nav = () => {
                     {/* user profile */}
                     <div className='flex justify-between'>
 
-                        <a href="">
-                            <FaUser size={24} className='cursor-pointer fill-gray-700' />
-                        </a>
-                        <a href="">
-                            <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
-                        </a>
 
-              <Link to=''>
+                        <Link to='/accountlinks'>
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </Link>
                         <Link to=''>
