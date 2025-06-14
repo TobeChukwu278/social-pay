@@ -1,69 +1,65 @@
-// import React, { useState } from 'react'
-// import Nav from './components/Nav'
-// import Footer from './components/Footer'
-// import Home from './pages/Home'
-// import Categories from './components/Categories'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
-// const App = () => {
-//   const [selectedCategory, setSelectedCategory] = useState(null)
+import Clothes from './components/Categories/Clothes';
+import Accessories from './components/Categories/Accessories';
+import Apartments from './components/Categories/Apartments';
+import Electronics from './components/Categories/Electronics';
+import House from './components/Categories/House';
+import Rentals from './components/Categories/Rentals';
+import Shoes from './components/Categories/Shoes';
+import Vehicles from './components/Categories/Vehicles';
 
-//   return (
-//     <div className='bg-gray-100'>
-//       <Nav onSelect={setSelectedCategory} />
-//       {/* Show Home if no category is selected, otherwise show the selected category */}
-//       {selectedCategory
-//         ? <Categories selected={selectedCategory} />
-//         : <Home />
-//       }
-//       <Footer />
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
-import Home from './pages/Home'
-import Clothes from './components/Categories/Clothes'
-import Accessories from './components/Categories/Accessories'
-import Apartments from './components/Categories/Apartments'
-import Electronics from './components/Categories/Electronics'
-import House from './components/Categories/House'
-import Rentals from './components/Categories/Rentals'
-import Shoes from './components/Categories/Shoes'
-import Vehicles from './components/Categories/Vehicles'
-import AccountLinks from './components/Account/AccountLinks'
-
+import Account from './components/Account/Account';
+import DashBoard from './components/Account/DashBoard';
+import Listings from './components/Account/Listings';
+import Orders from './components/Account/Orders';
+import Messages from './components/Account/Messages';
+import Saved from './components/Account/Saved';
+import Billing from './components/Account/Billing';
+import Profile from './components/Account/Profile';
+import Password from './components/Account/Password';
+import Settings from './components/Account/Settings';
 
 const App = () => {
-
   return (
-    <div className='bg-gray-100'>
+    <div className="bg-gray-100 min-h-screen flex flex-col">
       <Nav />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/clothes' element={<Clothes />} />
-        <Route path='/accessories' element={<Accessories />} />
-        <Route path='/apartments' element={<Apartments />} />
-        <Route path='/electronics' element={<Electronics />} />
-        <Route path='/house' element={<House />} />
-        <Route path='/rentals' element={<Rentals />} />
-        <Route path='/shoes' element={<Shoes />} />
-        <Route path='/vehicles' element={<Vehicles />} />
-        <Route path='/accountlinks' element={<AccountLinks />} />
-        <Route path='/accountlinks' element={<AccountLinks />} />
-      </Routes>
+
+      <div className="flex-1">
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<Home />} />
+          <Route path="/clothes" element={<Clothes />} />
+          <Route path="/accessories" element={<Accessories />} />
+          <Route path="/apartments" element={<Apartments />} />
+          <Route path="/electronics" element={<Electronics />} />
+          <Route path="/house" element={<House />} />
+          <Route path="/rentals" element={<Rentals />} />
+          <Route path="/shoes" element={<Shoes />} />
+          <Route path="/vehicles" element={<Vehicles />} />
+
+          {/* Account Dashboard Routes */}
+          <Route path="/account" element={<Account />}>
+            <Route path="dashboard" element={<DashBoard />} />
+            <Route path="listings" element={<Listings />} />
+            <Route path="orders" element={<Orders />} />
+            <Route path="messages" element={<Messages />} />
+            <Route path="saved" element={<Saved />} />
+            <Route path="billing" element={<Billing />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="password" element={<Password />} />
+            <Route path="settings" element={<Settings />} />
+          </Route>
+        </Routes>
+      </div>
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

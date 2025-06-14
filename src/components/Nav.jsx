@@ -31,7 +31,7 @@ const Nav = () => {
 
 
 
-                        <Link to='/accountlinks'>
+                        <Link to='/account'>
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </Link>
                         <Link to=''>

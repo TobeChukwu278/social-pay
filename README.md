@@ -14,3 +14,10 @@ If you are developing a production application, we recommend using TypeScript wi
 =======
 # social-pay
 >>>>>>> d9570526b2459cd4acfcc4c284d7e8b2b23ddf29
+
+
+
+things i installed are below::  
+npm install recharts
+npm install lucide-react
+
