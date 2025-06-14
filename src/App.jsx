@@ -29,7 +29,7 @@ const App = () => {
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <Nav />
 
-      <div className="flex-1">
+      <main className="flex-1">
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
@@ -42,7 +42,7 @@ const App = () => {
           <Route path="/shoes" element={<Shoes />} />
           <Route path="/vehicles" element={<Vehicles />} />
 
-          {/* Account Dashboard Routes */}
+          {/* Account Routes */}
           <Route path="/account" element={<Account />}>
             <Route path="dashboard" element={<DashBoard />} />
             <Route path="listings" element={<Listings />} />
@@ -55,7 +55,7 @@ const App = () => {
             <Route path="settings" element={<Settings />} />
           </Route>
         </Routes>
-      </div>
+      </main>
 
       <Footer />
     </div>
