@@ -34,9 +34,9 @@ const Nav = () => {
                         <Link to='/account'>
                             <FaUser size={24} className='cursor-pointer fill-gray-700' />
                         </Link>
-                        <Link to=''>
+                        {/* <Link to=''>
                             <FaShoppingCart size={24} className='cursor-pointer fill-gray-700' />
-                        </Link>
+                        </Link> */}
 
                     </div>
                 </div>

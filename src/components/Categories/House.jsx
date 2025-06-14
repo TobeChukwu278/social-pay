@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useCart } from '../Cart/CartContext'; // Adjust the path based on your folder structure
 
 const house = [
     {
@@ -25,6 +26,7 @@ const house = [
 ];
 
 const House = ({ random }) => {
+    const { addToCart } = useCart();
 
     const items = random ? [house[Math.floor(Math.random() * house.length)]] : house;
 
@@ -38,12 +40,20 @@ const House = ({ random }) => {
                         <div className="text-lg font-semibold text-gray-700">{item.name}</div>
                         <div className="text-gray-500">{item.location}</div>
                         <div className="text-blue-600 font-bold mt-1">{item.price}</div>
-                        <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View Details</button>
+                        <div className="flex gap-2 mt-3">
+                            <button className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View</button>
+                            <button
+                                onClick={() => addToCart(item)}
+                                className="px-4 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default House
+export default House;

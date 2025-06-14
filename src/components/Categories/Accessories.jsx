@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useCart } from '../Cart/CartContext'; // Ensure this path is correct
 
 const accessories = [
     {
@@ -28,6 +29,7 @@ const accessories = [
 ];
 
 const Accessories = ({ random }) => {
+    const { addToCart } = useCart(); // Hook from cart context
 
     const items = random ? [accessories[Math.floor(Math.random() * accessories.length)]] : accessories;
 
@@ -40,12 +42,18 @@ const Accessories = ({ random }) => {
                         <img src={item.image} alt={item.name} className="w-32 h-32 object-cover rounded-md mb-3" />
                         <div className="text-lg font-semibold text-gray-700">{item.name}</div>
                         <div className="text-blue-600 font-bold mt-1">{item.price}</div>
-                        <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View</button>
+
+                        <button
+                            onClick={() => addToCart(item)}
+                            className="mt-3 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                        >
+                            Add to Cart
+                        </button>
                     </div>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Accessories
+export default Accessories;

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -24,41 +25,53 @@ import Profile from './components/Account/Profile';
 import Password from './components/Account/Password';
 import Settings from './components/Account/Settings';
 
+import CartProvider from './components/Cart/CartProvider';
+import CartDrawer from './components/Cart/CartDrawer';
+import CartButton from './components/Cart/CartButton';
+
 const App = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col">
-      <Nav />
+    <CartProvider>
+      <div className="bg-gray-100 min-h-screen flex flex-col">
+        <Nav />
 
-      <main className="flex-1">
-        <Routes>
-          {/* Public Routes */}
-          <Route path="/" element={<Home />} />
-          <Route path="/clothes" element={<Clothes />} />
-          <Route path="/accessories" element={<Accessories />} />
-          <Route path="/apartments" element={<Apartments />} />
-          <Route path="/electronics" element={<Electronics />} />
-          <Route path="/house" element={<House />} />
-          <Route path="/rentals" element={<Rentals />} />
-          <Route path="/shoes" element={<Shoes />} />
-          <Route path="/vehicles" element={<Vehicles />} />
+        {/* Cart UI */}
+        <CartButton onClick={() => setIsCartOpen(true)} />
+        <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
 
-          {/* Account Routes */}
-          <Route path="/account" element={<Account />}>
-            <Route path="dashboard" element={<DashBoard />} />
-            <Route path="listings" element={<Listings />} />
-            <Route path="orders" element={<Orders />} />
-            <Route path="messages" element={<Messages />} />
-            <Route path="saved" element={<Saved />} />
-            <Route path="billing" element={<Billing />} />
-            <Route path="profile" element={<Profile />} />
-            <Route path="password" element={<Password />} />
-            <Route path="settings" element={<Settings />} />
-          </Route>
-        </Routes>
-      </main>
+        <main className="flex-1">
+          <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/clothes" element={<Clothes />} />
+            <Route path="/accessories" element={<Accessories />} />
+            <Route path="/apartments" element={<Apartments />} />
+            <Route path="/electronics" element={<Electronics />} />
+            <Route path="/house" element={<House />} />
+            <Route path="/rentals" element={<Rentals />} />
+            <Route path="/shoes" element={<Shoes />} />
+            <Route path="/vehicles" element={<Vehicles />} />
 
-      <Footer />
-    </div>
+            {/* Account Routes */}
+            <Route path="/account" element={<Account />}>
+              <Route path="dashboard" element={<DashBoard />} />
+              <Route path="listings" element={<Listings />} />
+              <Route path="orders" element={<Orders />} />
+              <Route path="messages" element={<Messages />} />
+              <Route path="saved" element={<Saved />} />
+              <Route path="billing" element={<Billing />} />
+              <Route path="profile" element={<Profile />} />
+              <Route path="password" element={<Password />} />
+              <Route path="settings" element={<Settings />} />
+            </Route>
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </CartProvider>
   );
 };
 

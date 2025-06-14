@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useCart } from '../Cart/CartContext'; // Adjust the path based on your project structure
 
 const clothes = [
     {
@@ -22,8 +23,9 @@ const clothes = [
 ];
 
 const Clothes = ({ random }) => {
+    const { addToCart } = useCart();
 
-    const items = random ? [clothes[Math.floor(Math.random() * clothes.length)]] : clothes
+    const items = random ? [clothes[Math.floor(Math.random() * clothes.length)]] : clothes;
 
     return (
         <div className="py-6">
@@ -34,12 +36,20 @@ const Clothes = ({ random }) => {
                         <img src={item.image} alt={item.name} className="w-32 h-32 object-cover rounded-md mb-3" />
                         <div className="text-lg font-semibold text-gray-700">{item.name}</div>
                         <div className="text-blue-600 font-bold mt-1">{item.price}</div>
-                        <button className="mt-3 px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View</button>
+                        <div className="flex gap-2 mt-3">
+                            <button className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View</button>
+                            <button
+                                onClick={() => addToCart(item)}
+                                className="px-4 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Clothes
+export default Clothes;
