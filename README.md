@@ -6,8 +6,8 @@
 
 | Name           | GitHub Profile                                     | Role               |
 | -------------- | -------------------------------------------------- | ------------------ |
-| **Prince**     | [@OnyekachiEze](https://github.com/OnyekachiEze)   | Project Maintainer |
-| **TobeChukwu** | [@TobeChukwu278](https://github.com/TobeChukwu278) | Contributor        |
+| **Onyekachi Eze**     | [@OnyekachiEze](https://github.com/OnyekachiEze)   | Web Developer 1 |
+| **TobeChukwu** | [@TobeChukwu278](https://github.com/TobeChukwu278) | Web Developer 2 |
 
 
 ## 🚀 Overview
