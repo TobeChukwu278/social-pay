@@ -42,7 +42,7 @@
 
 ## 📸 Screenshots
 
-> *(Insert actual screenshots here for best presentation)*
+
 
 ![Homepage](./screenshots/homepage.png)  
 ![Product Page](./screenshots/product-page.png)  
@@ -65,4 +65,4 @@ npm run dev
 things i installed are below::  
 npm install recharts
 npm install lucide-react
-
+npm install react-icons
