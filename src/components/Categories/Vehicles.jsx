@@ -7,21 +7,42 @@ const vehicles = [
         name: "Rolls Royce",
         price: "$1,200/day",
         location: "Downtown",
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+        image: "https://pictures-nigeria.jijistatic.net/140708579_NjIwLTgyNy0zYTY3ZTFjMzc4.webp"
     },
     {
         id: 2,
         name: "Maybach",
         price: "$50/day",
         location: "Uptown",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+        image: "https://www.carscoops.com/wp-content/uploads/2022/07/MANSORY-Maybach-S%E2%80%91Class-a.jpg"
     },
     {
         id: 3,
         name: "Tundra",
         price: "$180/day",
         location: "Suburbs",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80"
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/dc/2022_Toyota_Tundra_Limited_CrewMax_Short_Bed_4x4_with_TRD_Off-Road_Package%2C_front_left%2C_11-01-2022.jpg"
+    },
+    {
+        id: 4,
+        name: "Car Rentals Services",
+        price: "$180/day",
+        location: "Suburbs",
+        image: "https://pictures-nigeria.jijistatic.net/108430392_NjIwLTQ2NS1kMTgxODUxNzM0LTE.webp"
+    },
+    {
+        id: 5,
+        name: "Taxi Hire",
+        price: "$180/day",
+        location: "Suburbs",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8a4n_VjhrBL4d_jtUMO54pJ6_BuYZBKG8bA&s"
+    },
+    {
+        id: 6,
+        name: "Self-Drive Car Rental",
+        price: "$180/day",
+        location: "Suburbs",
+        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=612,h=440,fit=crop/AE0oeK21lzSrpz2k/first-car-m5KwKBMwPGHW2p4v.JPG"
     }
 ];
 

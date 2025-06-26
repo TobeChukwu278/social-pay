@@ -4,24 +4,59 @@ import { useCart } from '../Cart/CartContext'; // Adjust path if CartContext is 
 const rentals = [
     {
         id: 1,
-        name: "Canopy",
+        name: "Matrix 10' x 20' Canopy Tent ",
         price: "$1,200/day",
         location: "Downtown",
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH2cHYlidA6KLljdSyyhso88Ugh2NRjU2uwQ&s"
     },
     {
         id: 2,
-        name: "Chair",
+        name: "Canopies - 15' Wide ",
         price: "$850/day",
         location: "Uptown",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+        image: "https://www.avparty.com/wp-content/uploads/2016/03/15-Canopies.jpg"
     },
     {
         id: 3,
-        name: "Cooking Pot",
+        name: "White Folding Padded Chair Rentals",
         price: "$1,800/day",
         location: "Suburbs",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwn7H3N_iZV2vnkm5Axbme1dwQbZn75Kf4rg&s"
+    },
+    {
+        id: 4,
+        name: "Padded Stacking Chair Rentals ",
+        price: "$1,800/day",
+        location: "Suburbs",
+        image: "https://atlaspartyrentals.com/wp-content/uploads/2023/08/PaddedStackingChairRentals-1.png"
+    },
+    {
+        id: 5,
+        name: "Affordable Tables & Chairs Rentals",
+        price: "$1,800/day",
+        location: "Suburbs",
+        image: "https://images.squarespace-cdn.com/content/v1/61c2a9a15f19d94fdbb2bac6/aa74a323-504c-4b2f-b37c-a9037831ce26/dove-party-rentals-image-main.jpg"
+    },
+    {
+        id: 6,
+        name: "Cooking Pots Rentals",
+        price: "$1,800/day",
+        location: "Suburbs",
+        image: "https://naijamart.com/storage/file_upload/downloads/66349494c5073Screenshot_20240313-1104092-1.jpg"
+    },
+    {
+        id: 7,
+        name: "Cooking Utensils Rentals",
+        price: "$1,800/day",
+        location: "Suburbs",
+        image: "https://naijamart.com/storage/file_upload/downloads/6634949532a32Screenshot_20240313-1058522-1.jpg"
+    },
+    {
+        id: 8,
+        name: "Industrial pot",
+        price: "$1,800/day",
+        location: "Suburbs",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxLf1FRYSq5GMvPg3T9wiPPd1mgpLE9Xi3Q&s"
     }
 ];
 
