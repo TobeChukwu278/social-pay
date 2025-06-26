@@ -7,21 +7,21 @@ const house = [
         name: "Modern Loft",
         price: "$1,200/mo",
         location: "Downtown",
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXllChKmCjVCyWFor2MAkuH21OsaYPGpGb6g&s"
     },
     {
         id: 2,
-        name: "Cozy Studio",
+        name: "4 units of 2 bedroom flat",
         price: "$850/mo",
         location: "Uptown",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+        image: "https://prestonhouseplans.com.ng/wp-content/uploads/2022/09/PSX_20220912_061215.jpg"
     },
     {
         id: 3,
-        name: "Family Apartment",
+        name: "Portable 2 bedroom",
         price: "$1,800/mo",
         location: "Suburbs",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80"
+        image: "https://houseplanng.com/wp-content/uploads/wp-realestate-uploads/_property_featured_image/2021/03/well-finished-2bedroom-hp1.jpg"
     }
 ];
 

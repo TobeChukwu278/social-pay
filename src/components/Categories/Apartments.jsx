@@ -7,21 +7,21 @@ const apartments = [
         name: "1 bedroom",
         price: "$12/day",
         location: "Downtown",
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiv-arH-ltNVA8wtaO5kCf-NKik3izl_zSUg&s"
     },
     {
         id: 2,
         name: "2 bedroom Flat",
         price: "$850/day",
         location: "Uptown",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mfrjD5ghLYGCkUIvgOSd6ECFJNaAyuoivw&s"
     },
     {
         id: 3,
-        name: "Self Con",
+        name: "Semi Self-Contained Apartment",
         price: "$18/day",
         location: "Suburbs",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7DfE6jD_ZN8X9mVuJ6oUmzRO5nSkJvbwPqbTGKbM0v2zsKQQSq3t0jAuPbl6YhR1YBe8&usqp=CAU"
     }
 ];
 

@@ -27,7 +27,7 @@ const electronics = [
         id: 4,
         name: "4K Ultra HD Action Camera",
         price: "$150",
-        image: "https://m.media-amazon.com/images/I/61w6L6bQFGL._AC_SL1500_.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQZB2-u075ii853nnqeWUITaHkMh4eUqFNg&s"
     },
     {
         id: 5,
@@ -57,25 +57,25 @@ const electronics = [
         id: 9,
         name: "Wireless Keyboard and Mouse Combo",
         price: "$40",
-        image: "https://m.media-amazon.com/images/I/71kQbQESuSL._AC_SL1500_.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Nlb-S-O9CbwN7t-m_5PFeA9-ff9pkKAGzw&s"
     },
     {
         id: 10,
         name: "HDMI Streaming Device",
         price: "$55",
-        image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6407/6407036_sd.jpg"
+        image: "https://s13emagst.akamaized.net/products/15160/15159062/images/res_e6c3e3d46d5e85cd9a490cb9924f1f4b.jpg"
     },
     {
         id: 11,
         name: "Smart Fitness Watch",
         price: "$85",
-        image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MYAX2_VW_34FR+watch-44-alum-silver-nc-6s_VW_34FR_WF_CO_GEO_US?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1599010368000"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kQtepl3r-USkL-h75tXGeUKbdfgkvkk4fw&s"
     },
     {
         id: 12,
         name: "Portable Bluetooth Speaker",
         price: "$45",
-        image: "https://m.media-amazon.com/images/I/71z3kpMAYsL._AC_SL1500_.jpg"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-gyf5RhwUVW8LLEOITPfdhqkHI-PfVhGrg&s"
     },
     {
         id: 13,
