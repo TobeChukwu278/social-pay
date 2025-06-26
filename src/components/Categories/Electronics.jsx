@@ -85,10 +85,16 @@ const electronics = [
     }
 ];
 
-const Electronics = ({ random }) => {
+
+function getRandomItems(arr, count) {
+    const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+const Electronics = ({ random, randomCount = 4 }) => {
     const { addToCart } = useCart();
 
-    const items = random ? [electronics[Math.floor(Math.random() * electronics.length)]] : electronics;
+    const items = random ? getRandomItems(electronics, randomCount) : electronics;
 
     return (
         <div className="py-6 px-4">

@@ -1,7 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { FaGooglePlay, FaAppStoreIos } from 'react-icons/fa'
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div>
       <footer className="bg-gray-100 text-gray-700 py-12 px-4 sm:px-6 lg:px-8">
@@ -26,6 +30,14 @@ const Footer = () => {
               <li><a href="#" className="hover:underline">Trust & safety</a></li>
               <li><a href="#" className="hover:underline">For events</a></li>
               <li><a href="#" className="hover:underline">Help Center</a></li>
+              <li>
+                <button
+                  className="text-blue-600 hover:underline"
+                  onClick={() => navigate('/seller-signup')}
+                >
+                  Sign up as a Seller
+                </button>
+              </li>
             </ul>
           </div>
 

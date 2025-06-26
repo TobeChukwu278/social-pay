@@ -22,10 +22,15 @@ const clothes = [
     }
 ];
 
-const Clothes = ({ random }) => {
+function getRandomItems(arr, count) {
+    const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+const Clothes = ({ random, randomCount = 4 }) => {
     const { addToCart } = useCart();
 
-    const items = random ? [clothes[Math.floor(Math.random() * clothes.length)]] : clothes;
+    const items = random ? getRandomItems(clothes, randomCount) : clothes;
 
     return (
         <div className="py-6">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import BoostedListing from '../components/BoostedListing'
 import FeaturedListings from '../components/FeaturedListings'
 import Categories from '../components/Categories'
@@ -17,7 +18,10 @@ const testimonials = [
     }
 ];
 
-const Home = () => {
+const Home = ({ isLoggedIn }) => {
+
+    const navigate = useNavigate();
+
     return (
         <div>
             {/* Sliding advert display */}
@@ -32,9 +36,14 @@ const Home = () => {
                     <p className='text-xl text-gray-700 mb-8 font-medium'>
                         Discover a smarter way to access what you need - without owning everything.
                     </p>
-                    <button className='bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out transform hover:scale-105'>
-                        Get Started
-                    </button>
+                    {!isLoggedIn && (
+                        <button
+                            className='bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-800 transition duration-300 ease-in-out transform hover:scale-105'
+                            onClick={() => navigate('/auth')}
+                        >
+                            Get Started
+                        </button>
+                    )}
                 </div>
                 {/* illustration */}
                 <img src={HeroImage} alt='Sharing items illustration' className='hidden md:block w-1/2 max-w-md mx-auto md:mx-0 mt-10 md:mt-0' />

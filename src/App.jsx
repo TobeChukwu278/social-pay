@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -31,8 +32,13 @@ import CartButton from './components/Cart/CartButton';
 
 import ProductDetails from './components/ProductDeatails';
 
+import AuthPage from './components/Auth';
+
+import SellerTerms from './components/SellerTerms';
+
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <CartProvider>
@@ -45,8 +51,15 @@ const App = () => {
 
         <main className="flex-1">
           <Routes>
+            {/* Authentication Routes */}
+            <Route path="/auth" element={
+              isLoggedIn
+                ? <Navigate to="/" />
+                : <AuthPage onLogin={() => setIsLoggedIn(true)} />
+            } />
+
             {/* Public Routes */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home isLoggedIn={isLoggedIn} />} />
             <Route path="/clothes" element={<Clothes />} />
             <Route path="/accessories" element={<Accessories />} />
             <Route path="/apartments" element={<Apartments />} />
@@ -71,6 +84,9 @@ const App = () => {
 
             {/* product detail route */}
             <Route path="/product/:id" element={<ProductDetails />} />
+
+            {/* Seller Terms Route */}
+            <Route path="/seller-signup" element={<SellerTerms />} />
           </Routes>
         </main>
 

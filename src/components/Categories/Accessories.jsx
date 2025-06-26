@@ -108,39 +108,50 @@ export const accessories = [
     }
 ];
 
-const Accessories = ({ random }) => {
+
+function getRandomItems(arr, count) {
+    const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+const Accessories = ({ random, randomCount = 4 }) => {
     const { addToCart } = useCart();
     const [expandedId, setExpandedId] = useState(null);
 
-    const items = random ? [accessories[Math.floor(Math.random() * accessories.length)]] : accessories;
+    const items = random ? getRandomItems(accessories, randomCount) : accessories;
 
     return (
         <div className="py-6 px-4">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Accessories</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                 {items.map(item => (
-                    <Link to={`/product/${item.id}`}>
+
+                    <div
+                        key={item.id}
+                        className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center w-64 h-80 hover:shadow-lg transition-shadow"
+                    >
+                        <img src={item.image} alt={item.name} className="w-32 h-32 object-cover rounded-md mb-3" />
                         <div
-                            key={item.id}
-                            className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center w-64 h-80 hover:shadow-lg transition-shadow"
+                            className={`text-lg font-semibold text-gray-700 text-center w-full cursor-pointer ${expandedId === item.id ? '' : 'truncate'}`}
+                            onClick={() => setExpandedId(expandedId === item.id ? null : item.id)}
+                            title={expandedId === item.id ? '' : item.name}
                         >
-                            <img src={item.image} alt={item.name} className="w-32 h-32 object-cover rounded-md mb-3" />
-                            <div
-                                className={`text-lg font-semibold text-gray-700 text-center w-full cursor-pointer ${expandedId === item.id ? '' : 'truncate'}`}
-                                onClick={() => setExpandedId(expandedId === item.id ? null : item.id)}
-                                title={expandedId === item.id ? '' : item.name}
-                            >
-                                {item.name}
-                            </div>
-                            <div className="text-blue-600 font-bold mt-1">{item.price}</div>
+                            {item.name}
+                        </div>
+                        <div className="text-blue-600 font-bold mt-1">{item.price}</div>
+                        <div className="flex gap-2 mt-3">
+                            <Link to={`/product/${item.id}`}>
+                                <button className="px-4 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View</button>
+                            </Link>
                             <button
                                 onClick={() => addToCart(item)}
-                                className="mt-auto px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                                className="px-4 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
                             >
                                 Add to Cart
                             </button>
                         </div>
-                    </Link>
+                    </div>
+
                 ))}
             </div>
         </div>
