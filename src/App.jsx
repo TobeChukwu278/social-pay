@@ -29,12 +29,14 @@ import CartProvider from './components/Cart/CartProvider';
 import CartDrawer from './components/Cart/CartDrawer';
 import CartButton from './components/Cart/CartButton';
 
+import ProductDetails from './components/ProductDeatails';
+
 const App = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
     <CartProvider>
-      <div className="bg-gray-100 min-h-screen flex flex-col">
+      <div className="bg-[#FDF9EB] min-h-screen flex flex-col">
         <Nav />
 
         {/* Cart UI */}
@@ -66,6 +68,9 @@ const App = () => {
               <Route path="password" element={<Password />} />
               <Route path="settings" element={<Settings />} />
             </Route>
+
+            {/* product detail route */}
+            <Route path="/product/:id" element={<ProductDetails />} />
           </Routes>
         </main>
 

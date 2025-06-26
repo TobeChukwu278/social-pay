@@ -30,7 +30,7 @@ const Clothes = ({ random }) => {
     return (
         <div className="py-6">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Clothes</h2>
-            <div className="flex flex-wrap gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                 {items.map(item => (
                     <div key={item.id} className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center w-64 hover:shadow-lg transition-shadow">
                         <img src={item.image} alt={item.name} className="w-32 h-32 object-cover rounded-md mb-3" />
