@@ -19,7 +19,7 @@ export const accessories = [
         id: 3,
         name: "Wrist Watch",
         price: "$120",
-        image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+        image: "https://cdn.pixabay.com/photo/2017/03/20/15/13/wrist-watch-2159351_640.jpg"
     },
     {
         id: 4,
@@ -54,57 +54,57 @@ export const accessories = [
     },
     {
         id: 9,
-        name: "Minimalist Silver Bracelet",
+        name: "Apple Watch",
         price: "$28",
-        image: "https://img.freepik.com/free-photo/silver-bracelet_1203-7483.jpg?w=740"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7cwkPLsQvRlrLbFoCnqBbcHyJL1wf-LOsQ&s"
     },
     {
         id: 10,
-        name: "Vintage Fedora Hat",
+        name: "STAC Fine Jewellery",
         price: "$45",
-        image: "https://img.freepik.com/free-photo/fedora-hat_1203-7484.jpg?w=740"
+        image: "https://www.stacfinejewellery.com/cdn/shop/articles/blog_cover_images_3_ebf510f5-9b25-47a9-b0bf-ec73cfdcd24d_700x.png?v=1650040513"
     },
     {
         id: 11,
-        name: "Elegant Silk Scarf",
+        name: "Electronic Gadgets",
         price: "$22",
-        image: "https://img.freepik.com/free-photo/silk-scarf_1203-7485.jpg?w=740"
+        image: "https://static.vecteezy.com/system/resources/previews/056/654/427/non_2x/mockup-showcases-collection-of-tech-gadgets-designed-in-isometric-view-featuring-stylish-headphones-sleek-power-bank-and-modern-smartphone-all-ready-for-branding-and-customization-photo.jpeg"
     },
     {
         id: 12,
-        name: "Luxury Gold Cufflinks",
+        name: "Gadget accessories",
         price: "$55",
-        image: "https://img.freepik.com/free-photo/gold-cufflinks_1203-7486.jpg?w=740"
+        image: "https://c8.alamy.com/comp/R68K0H/gadgets-and-accessories-isolated-on-white-background-R68K0H.jpg"
     },
     {
         id: 13,
-        name: "Travel Toiletry Bag",
+        name: "Phone Accessories ",
         price: "$18",
-        image: "https://img.freepik.com/free-photo/toiletry-bag_1203-7487.jpg?w=740"
+        image: "https://t3.ftcdn.net/jpg/02/73/31/68/360_F_273316816_N9164vXl3NTl1W50Z3o2ocQmtjBAAPOO.jpg"
     },
     {
         id: 14,
         name: "Bluetooth Earbuds",
         price: "$65",
-        image: "https://img.freepik.com/free-photo/bluetooth-earbuds_1203-7488.jpg?w=740"
+        image: "https://lcdn.altex.ro/media/catalog/product/a/i/airpods_4_1_09508b1d.jpg"
     },
     {
         id: 15,
         name: "Canvas Messenger Bag",
         price: "$38",
-        image: "https://img.freepik.com/free-photo/messenger-bag_1203-7489.jpg?w=740"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaaFcHVUwxuuzuX8nFBvUMr7Zr6uSAM_a0Q&s"
     },
     {
         id: 16,
         name: "Classic Aviator Sunglasses",
         price: "$30",
-        image: "https://img.freepik.com/free-photo/aviator-sunglasses_1203-7490.jpg?w=740"
+        image: "https://static.eyerim.com/content/images/product/main-redesign/32003.jpg"
     },
     {
         id: 17,
         name: "Elegant Pearl Necklace",
         price: "$80",
-        image: "https://img.freepik.com/free-photo/pearl-necklace_1203-7491.jpg?w=740"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kBgagsZ3ejNymZt5o0MfnsAGQWhfPiC1-w&s"
     }
 ];
 
