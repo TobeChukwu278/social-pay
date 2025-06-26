@@ -7,21 +7,21 @@ const shoes = [
         name: "Nike",
         price: "$12/day",
         location: "Downtown",
-        image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXhJcrpgmWOC6V5YZ5PAvLZFy3FLfFWYB_pQ&s"
     },
     {
         id: 2,
         name: "Adidas",
         price: "$850/day",
         location: "Uptown",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKArVOsCkg-oFKMMA3PYpotX0HHsWQhqGOQ&s"
     },
     {
         id: 3,
         name: "Air force 1",
         price: "$1,800/day",
         location: "Suburbs",
-        image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=400&q=80"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGC-FAU0tnh7nm-pH1XoCJH7J5EdJ2ogw4g&s"
     }
 ];
 
